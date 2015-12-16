@@ -1,0 +1,127 @@
+<html>
+<title>Adult PAR-Q</title>
+<body>
+	<h1>Adult PAR-Q</h1>
+	<h2>Participant Information</h2>
+	<form>
+		<div>
+			<label>First Name</label> <input type="text" value="parq.firstname" />
+		</div>
+		<div>
+			<label>Surname</label> <input type="text" value="parq.surname">
+		</div>
+		<div>
+			<label>Address</label> <input type="text" value="parq.address">
+		</div>
+		<div>
+			<label>Postcode</label> <input type="text" value="parq.postcode">
+		</div>
+		<div>
+			<label>Home Phone Number</label> <input type="text" value="parq.homephone">
+		</div>
+		<div>
+			<label>Mobile Phone Number</label> <input type="text" value="parq.mobile">
+		</div>
+		<div>
+			<label>Date Of Birth</label> <input type="text" value="parq.dob">
+		</div>
+		<div>
+			<label>Email Address</label> <input type="email" value="parq.email">
+		</div>
+		<div>
+			<label>Emergency Contact Name</label> <input type="text" value="parq.emergencycontact">
+		</div>
+		<div>
+			<label>Emergency Contact Number</label> <input type="text" value="parq.emergencynumber">
+		</div>
+		<div>
+			<label>How did you hear about us</label> <input type="text" value="parq.howhear">
+		</div>
+		<hr />
+		<h2>Physical Activity Readiness Questionnaire</h2>
+
+		<h4>Please be aware that all information on completed forms will
+			be confidential</h4>
+
+		<h4>If you select any of the boxes below you must have your
+			doctor’s consent before you take part in any physical activity on
+			this course. You will be required to provide a doctor’s consent
+			letter, which you must bring with you on the first day of the course.</h4>
+
+		<div class="checkbox">
+			<label><input type="checkbox" checked="parq.q1_heart">
+				Has your doctor ever said that you have a heart condition and
+				recommended only medically supervised activity?</label>
+		</div>
+		<div class="checkbox">
+			<label><input type="checkbox" checked="parq.q2_chest">
+				Do you have chest pain brought on by physical activity?</label>
+		</div>
+		<div class="checkbox">
+			<label><input type="checkbox" checked="parq.q3_chestmonth">
+				Have you developed chest pain in the last month?</label>
+		</div>
+		<div class="checkbox">
+			<label><input type="checkbox" checked="parq.q4_dizzy">
+				Do you tend to lose consciousness or fall over as a result of
+				dizziness?</label>
+		</div>
+		<div class="checkbox">
+			<label><input type="checkbox" checked="parq.q5_bone">
+				Do you have a bone or joint problem that could be aggravated by the
+				proposed physical activity?</label>
+		</div>
+		<div class="checkbox">
+			<label><input type="checkbox" checked="parq.q6_blood">
+				Has a doctor ever recommended medication for your blood pressure or
+				a heart condition?</label>
+		</div>
+		<div class="checkbox">
+			<label><input type="checkbox" checked="parq.q7_supervision">
+				Are you aware, through your own experience or from a doctor’s
+				advice, of any other physical reason why you should not exercise
+				without medical supervision?</label>
+		</div>
+		<div class="checkbox">
+			<label><input type="checkbox" checked="parq.q8_pregnant">
+				Are you currently, or have you been pregnant in the last six months?</label>
+		</div><br/>
+        <div>
+            <label>Is there any additional information the instructor should be aware of?</label> <input type="text" value="parq.q9_additional">
+        </div>
+
+		<hr />
+		<h2>Informed Consent</h2>
+
+		<h4>All exercises and workshop activities are designed to enable
+			students to experience different levels of intensity and duration of
+			activities. As a result, some individuals may experience different
+			feelings of load in their muscles and varying breathing patterns.
+			Some individuals may become hot and somewhat uncomfortable as they
+			take part in activities that are either new to them or they are less
+			familiar with.</h4>
+		<h4>Each workshop activity is designed to be safe and effective
+			and to minimise any risk of injury.</h4>
+		<h4>If you feel any pain or discomfort at any time, stop doing
+			the activity concerned and inform the Instructor. If you have any
+			reason that you believe means that you should not perform any of the
+			activities you are asked to do; do not perform that activity and
+			inform the Instructor of your decision and the reasons.</h4>
+		<h4>The training program has been explained to me and I am
+			willing to take part.</h4>
+		<h4>Of course, I understand that I may withdraw my participation
+			at any time.</h4>
+		<hr />
+		<h2>Signature</h2>
+
+		<h4>Please enter a secret word that will be able to confirm that
+			it was you that answered these questions, for example your mothers
+			maiden name. This will not be displayed.</h4>
+
+        <div>
+            <label>Secret Word</label> <input type="text" value="parq.secret">
+        </div>
+	</form>
+	<hr />
+</body>
+</html>
