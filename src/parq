@@ -5,37 +5,37 @@
 	<h2>Participant Information</h2>
 	<form>
 		<div>
-			<label>First Name</label> <input type="text" value="parq.firstname" />
+			<label>First Name</label> <input type="text" value="parq.firstname" readonly />
 		</div>
 		<div>
-			<label>Surname</label> <input type="text" value="parq.surname">
+			<label>Surname</label> <input type="text" value="parq.surname" readonly>
 		</div>
 		<div>
-			<label>Address</label> <input type="text" value="parq.address">
+			<label>Address</label> <input type="text" value="parq.address" readonly>
 		</div>
 		<div>
-			<label>Postcode</label> <input type="text" value="parq.postcode">
+			<label>Postcode</label> <input type="text" value="parq.postcode" readonly>
 		</div>
 		<div>
-			<label>Home Phone Number</label> <input type="text" value="parq.homephone">
+			<label>Home Phone Number</label> <input type="text" value="parq.homephone" readonly>
 		</div>
 		<div>
-			<label>Mobile Phone Number</label> <input type="text" value="parq.mobile">
+			<label>Mobile Phone Number</label> <input type="text" value="parq.mobile" readonly>
 		</div>
 		<div>
-			<label>Date Of Birth</label> <input type="text" value="parq.dob">
+			<label>Date Of Birth</label> <input type="text" value="parq.dob" readonly>
 		</div>
 		<div>
-			<label>Email Address</label> <input type="email" value="parq.email">
+			<label>Email Address</label> <input type="email" value="parq.email" readonly>
 		</div>
 		<div>
-			<label>Emergency Contact Name</label> <input type="text" value="parq.emergencycontact">
+			<label>Emergency Contact Name</label> <input type="text" value="parq.emergencycontact" readonly>
 		</div>
 		<div>
-			<label>Emergency Contact Number</label> <input type="text" value="parq.emergencynumber">
+			<label>Emergency Contact Number</label> <input type="text" value="parq.emergencynumber" readonly>
 		</div>
 		<div>
-			<label>How did you hear about us</label> <input type="text" value="parq.howhear">
+			<label>How did you hear about us</label> <input type="text" value="parq.howhear" readonly>
 		</div>
 		<hr />
 		<h2>Physical Activity Readiness Questionnaire</h2>
@@ -49,45 +49,45 @@
 			letter, which you must bring with you on the first day of the course.</h4>
 
 		<div class="checkbox">
-			<label><input type="checkbox" checked="parq.q1_heart">
+			<label><input type="checkbox" parq.q1_heart >
 				Has your doctor ever said that you have a heart condition and
 				recommended only medically supervised activity?</label>
 		</div>
 		<div class="checkbox">
-			<label><input type="checkbox" checked="parq.q2_chest">
+			<label><input type="checkbox" parq.q2_chest >
 				Do you have chest pain brought on by physical activity?</label>
 		</div>
 		<div class="checkbox">
-			<label><input type="checkbox" checked="parq.q3_chestmonth">
+			<label><input type="checkbox" parq.q3_chestmonth>
 				Have you developed chest pain in the last month?</label>
 		</div>
 		<div class="checkbox">
-			<label><input type="checkbox" checked="parq.q4_dizzy">
+			<label><input type="checkbox" parq.q4_dizzy>
 				Do you tend to lose consciousness or fall over as a result of
 				dizziness?</label>
 		</div>
 		<div class="checkbox">
-			<label><input type="checkbox" checked="parq.q5_bone">
+			<label><input type="checkbox" parq.q5_bone>
 				Do you have a bone or joint problem that could be aggravated by the
 				proposed physical activity?</label>
 		</div>
 		<div class="checkbox">
-			<label><input type="checkbox" checked="parq.q6_blood">
+			<label><input type="checkbox" parq.q6_blood>
 				Has a doctor ever recommended medication for your blood pressure or
 				a heart condition?</label>
 		</div>
 		<div class="checkbox">
-			<label><input type="checkbox" checked="parq.q7_supervision">
+			<label><input type="checkbox" parq.q7_supervision>
 				Are you aware, through your own experience or from a doctor’s
 				advice, of any other physical reason why you should not exercise
 				without medical supervision?</label>
 		</div>
 		<div class="checkbox">
-			<label><input type="checkbox" checked="parq.q8_pregnant">
+			<label><input type="checkbox" parq.q8_pregnant readonly>
 				Are you currently, or have you been pregnant in the last six months?</label>
 		</div><br/>
         <div>
-            <label>Is there any additional information the instructor should be aware of?</label> <input type="text" value="parq.q9_additional">
+            <label>Is there any additional information the instructor should be aware of?</label> <input type="text" value="parq.q9_additional" readonly>
         </div>
 
 		<hr />
@@ -119,7 +119,7 @@
 			maiden name. This will not be displayed.</h4>
 
         <div>
-            <label>Secret Word</label> <input type="text" value="parq.secret">
+            <label>Secret Word</label> <input type="text" value="parq.secret" readonly>
         </div>
 	</form>
 	<hr />
