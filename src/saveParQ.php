@@ -53,9 +53,16 @@ var_dump($upload);
     string(6) "aawwqq"
   } */
 $parq = $upload->{'parq'};
+$settings = $upload->{'settings'};
 $htmlbody = file_get_contents("parq");
 $trueVal = "checked";
 $falseVal = "";
+$htmlbody = str_replace("settings.name", $settings->{'name'}, $htmlbody );
+$htmlbody = str_replace("settings.email", $settings->{'email'}, $htmlbody );
+$htmlbody = str_replace("settings.phone", $settings->{'phone'}, $htmlbody );
+
+
+
 $htmlbody = str_replace("parq.firstname", $parq->{'firstname'}, $htmlbody );
 $htmlbody = str_replace("parq.surname", $parq->{'surname'}, $htmlbody );
 $htmlbody = str_replace("parq.address", $parq->{'address'}, $htmlbody );
@@ -80,8 +87,8 @@ $htmlbody = str_replace("parq.secret", $parq->{'secret'}, $htmlbody );
 
 // Add student to SugarCRM
 addStudent($upload);
-$from = $upload->{'settings'}->{'email'};
-$to = $upload->{'parq'}->{'email'};
+$from = $settings->{'email'};
+$to = $parq->{'email'};
 // Send email to student
 send_mail($from, $to, "Stay Safe Krav Maga", $htmlbody);
 // Send email to instructor
