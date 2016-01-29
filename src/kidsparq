@@ -1,0 +1,174 @@
+<html>
+ <head>
+<style>
+body {
+    background-color: #eff5f5;
+    font-family: arial;
+}
+</style>
+</head>
+<title>Stay Safe Krav Maga</title>
+<body>
+    <h1>Welcome</h1>
+    <p>Hi parq.parent_firstname,</p>
+    <p>Thank you very much for providing your details. I hope parq.firstname enjoyed the class. Here is the information you provided. You might be wondering what to do next?</p>
+    <p>You are welcome to come along and pay per class but sometimes Direct Debit is simpler.</p>
+    <p>As Kids only train during term time membership is averaged over the year. To join simply fill in the form on this link: <a href="https://dashboard.gocardless.com/api/template_plans/11NE0ZNZEA/paylink">SIGN UP HERE</a>. Simply fill in
+    a few questions and you are good to go. You are fully covered by the <a href="https://gocardless.com/direct-debit/guarantee/">Direct Debit Guarantee</a> and you can cancel the membership at any time by 
+    canceling your direct debit with your bank - no contract, no tie in period!</p>
+
+    <p>If you have any more questions you can email or call your instructor directly. Their contact details are:</p>
+    <table border="0">
+    <tr><td>Instructor</td><td>settings.name</td></tr>
+    <tr><td>Email</td><td>settings.email</td></tr>
+    <tr><td>Phone Number</td><td>settings.phone</td></tr>
+    </table>
+    <p>You can get details of all our classes from our <a href="http://staysafekravmaga.com">Stay Safe Krav Maga Website</a> or Like us on <a href="https://www.facebook.com/staysafekravmaga">Facebook</a></p>
+    
+    <p>Thanks from the Stay Safe Krav Maga Team</p>
+    
+    <h1>Kids PAR-Q</h1>
+<h2>Student Information</h2>
+<form>
+	<div>
+		<label>First Name</label> <input type="text" value="parq.firstname" readonly />
+	</div>
+	<div>
+		<label>Surname</label> <input type="text" value="parq.surname" readonly>
+	</div>
+	<div>
+		<label>Date Of Birth</label> <input type="text" value="parq.dob" readonly>
+	</div>
+<h2>Parent or Guardian Information</h2>
+		<div>
+			<label>First Name</label> <input type="text" value="parq.parent_firstname" readonly />
+		</div>
+		<div>
+			<label>Surname</label> <input type="text" value="parq.parent_surname" readonly>
+		</div>
+		<div>
+			<label>Address</label> <input type="text" value="parq.address" readonly>
+		</div>
+		<div>
+			<label>Postcode</label> <input type="text" value="parq.postcode" readonly>
+		</div>
+		<div>
+			<label>Home Phone Number</label> <input type="text" value="parq.homephone" readonly>
+		</div>
+		<div>
+			<label>Mobile Phone Number</label> <input type="text" value="parq.mobile" readonly>
+		</div>
+
+		<div>
+			<label>Email Address</label> <input type="text" value="parq.email" readonly>
+		</div>
+		<div>
+			<label>Emergency Contact Name (if different)</label> <input type="text" value="parq.emergencycontact" readonly>
+		</div>
+		<div>
+			<label>Emergency Contact Number (if different)</label> <input type="text" value="parq.emergencynumber" readonly>
+		</div>
+		<div>
+			<label>How did you hear about us</label> <input type="text" value="parq.howhear" readonly>
+		</div>
+	<hr />
+	<h2>Physical Activity Readiness Questionnaire</h2>
+
+	<h4>Please be aware that all information on completed forms will
+		be confidential</h4>
+
+	<h4>Does your child have or has he or she ever experienced any of the following?.</h4>
+
+	<div class="checkbox">
+		<label><input type="checkbox" parq.q1_k_blood>
+			High or Low Blood Pressure?</label>
+	</div>
+	<div class="checkbox">
+		<label><input type="checkbox" parq.q2_k_cholesterol>
+			Elevated blood cholesterol?</label>
+	</div>
+	<div class="checkbox">
+		<label><input type="checkbox" parq.q3_k_diabetes>
+			Diabetes?</label>
+	</div>
+	<div class="checkbox">
+		<label><input type="checkbox" parq.q4_k_chest>
+			Chest pains brought on by physical exertion?</label>
+	</div>
+	<div class="checkbox">
+		<label><input type="checkbox" parq.q5_k_epilepsy>
+			Childhood epilepsy?</label>
+	</div>
+	<div class="checkbox">
+		<label><input type="checkbox" parq.q6_k_dizzy>
+			Dizziness or fainting?</label>
+	</div>
+	<div class="checkbox">
+		<label><input type="checkbox" parq.q7_k_arthritis>
+			A bone, joint or muscular problems associated with arthritis?</label>
+	</div>
+	<div class="checkbox">
+		<label><input type="checkbox" parq.q8_k_asthma>
+			Asthma or respiratory Problems?</label>
+	</div>
+	<div class="checkbox">
+		<label><input type="checkbox" parq.q9_k_sustained>
+			Any sustained injuries or illness?</label>
+	</div>
+	<div class="checkbox">
+		<label><input type="checkbox" parq.q10_k_allergies>
+			Any allergies?</label>
+	</div>
+	<div class="checkbox">
+		<label><input type="checkbox" parq.q11_k_medication>
+			Is your child taking any medication?</label>
+	</div>
+	<div class="checkbox">
+		<label><input type="checkbox" parq.q12_k_exercise>
+			Has your doctor ever advised your child not to exercise?</label>
+	</div>
+	<div class="checkbox">
+		<label><input type="checkbox" parq.q13_k_anyother>
+			Is there any reason not mentioned above why any type or physical activity may not be suitable for your child?</label>
+	</div>
+	<div class="checkbox">
+		<label><input type="checkbox" parq.q14_k_medication>
+			If your child has emergency medication do they know and are they capable of administering it?</label>
+	</div>
+	<div>
+		<label>If answered 'YES' to any of the above questions please give full details here?</label> <input type="text" value="parq.q15_k_fulldetails" readonly>
+	</div>
+	<div>
+		<label>Is there any additional information the instructor should be aware of?</label> <input type="text" value="parq.q16_k_additional" readonly>
+	</div>
+
+	<hr />
+
+	<h4>In signing this form, I the parent/guardian of the aforementioned child, affirm that I 
+	have read this form in its entirety and I have answered the questions accurately and to the 
+	best of my knowledge. I understand that my child is responsible for monitoring him or herself 
+	throughout any activity, and should any unusual symptoms occur, my child understands the 
+	importance of informing the Instructor immediately.</h4>
+	
+	<h4>In the event that medical clearance must be obtained before my child's participation in an 
+	exercise session, I agree to contact the GP and obtain written permission prior to the commencement of the 
+	exercise activity, and that the permission be given to the instructor.</h4> 
+	
+	<h4>I understand that if my 
+	child fails to behave in a manner that is polite and social, he or she could be suspended from that particular activity.</h4>
+	
+	<hr />
+	<h2>Signature</h2>
+
+	<h4>Please enter a secret word that will be able to confirm that
+		it was you that answered these questions, for example your mothers maiden name. This will not be displayed.
+		</h4>
+
+    <div>
+        <label>Secret Word</label> <input type="text" value="parq.secret" readonly>
+    </div>
+ 
+	</form>
+	<hr />
+</body>
+</html>

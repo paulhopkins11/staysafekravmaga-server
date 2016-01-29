@@ -60,7 +60,152 @@ function addStudent($upload) {
 	$dobString = $dob->format('Y-m-d');
 	echo "DOB String is $dobString\n";
 	// Now, let's add a new Accounts record
-	$parameters = array (
+	if ($parq->{'kid'}) {
+		$parameters = array (
+				'session' => $sessionId,
+				'module' => 'Contacts',
+				'name_value_list' => array (
+						array (
+								'name' => 'first_name',
+								'value' => $parq->{'firstname'}
+						),
+						array (
+								'name' => 'last_name',
+								'value' => $parq->{'surname'}
+						),
+						array (
+								'name' => 'is_kid_c',
+								'value' => $parq->{'kid'}
+						),
+						array (
+								'name' => 'parent_firstname_c',
+								'value' => $parq->{'parent_firstname'}
+						),
+						array (
+								'name' => 'parent_surname_c',
+								'value' => $parq->{'parent_surname'}
+						),
+						array (
+								'name' => 'email1',
+								'value' => $parq->{'email'}
+						),
+						array (
+								'name' => 'phone_home',
+								'value' => $parq->{'homephone'}
+						),
+						array (
+								'name' => 'phone_mobile',
+								'value' => $parq->{'mobilephone'}
+						),
+						array (
+								'name' => 'primary_address_street',
+								'value' => $parq->{'address'} 
+						),
+						array (
+								'name' => 'primary_address_postalcode',
+								'value' => $parq->{'postcode'} 
+						),
+						array (
+								'name' => 'birthdate',
+								'value' => $dobString
+						),
+						array (
+								'name' => 'date_entered',
+								'value' => $parq->{'date'} 
+						),
+						array (
+								'name' => 'assistant',
+								'value' => $parq->{'emergencycontact'} 
+						),
+						array (
+								'name' => 'assistant_phone',
+								'value' => $parq->{'emergencynumber'} 
+						),
+						array (
+								'name' => 'how_hear_c',
+								'value' => $parq->{'howhear'} 
+						),
+						array (
+								'name' => 'q1_k_blood_c',
+								'value' => $parq->{'q1_k_blood'} 
+						),
+						array (
+								'name' => 'q2_k_cholesterol_c',
+								'value' => $parq->{'q2_k_cholesterol'} 
+						),
+						array (
+								'name' => 'q3_k_diabetes_c',
+								'value' => $parq->{'q3_k_diabetes'} 
+						),
+						array (
+								'name' => 'q4_k_chest_c',
+								'value' => $parq->{'q4_k_chest'} 
+						),
+						array (
+								'name' => 'q5_k_epilepsy_c',
+								'value' => $parq->{'q5_k_epilepsy'} 
+						),
+						array (
+								'name' => 'q6_k_dizzy_c',
+								'value' => $parq->{'q6_k_dizzy'} 
+						),
+						array (
+								'name' => 'q7_k_arthritis_c',
+								'value' => $parq->{'q7_k_arthritis'} 
+						),
+						array (
+								'name' => 'q8_k_asthma_c',
+								'value' => $parq->{'q8_k_asthma'} 
+						),
+						array (
+								'name' => 'q9_k_sustained_c',
+								'value' => $parq->{'q9_k_sustained'} 
+						),
+						array (
+								'name' => 'q10_k_allergies_c',
+								'value' => $parq->{'q10_k_allergies'} 
+						),
+						array (
+								'name' => 'q11_k_medication_c',
+								'value' => $parq->{'q11_k_medication'} 
+						),
+						array (
+								'name' => 'q12_k_exercise_c',
+								'value' => $parq->{'q12_k_exercise'} 
+						),
+						array (
+								'name' => 'q13_k_anyother_c',
+								'value' => $parq->{'q13_k_anyother'} 
+						),
+						array (
+								'name' => 'q14_k_medication_c',
+								'value' => $parq->{'q14_k_medication'} 
+						),
+						array (
+								'name' => 'q15_k_fulldetails_c',
+								'value' => $parq->{'q15_k_fulldetails'} 
+						),
+						array (
+								'name' => 'q16_k_additional_c',
+								'value' => $parq->{'q16_k_additional'} 
+						),
+						array (
+								'name' => 'secret_c',
+								'value' => $parq->{'secret'} 
+						),
+						array (
+								'name' => 'instructor_c',
+								'value' => $settings->{'name'} 
+						),
+						array (
+								'name' => 'class_c',
+								'value' => $settings->{'classlocation'} 
+						) 
+				) 
+		);
+	}
+	else {
+		$parameters = array (
 			'session' => $sessionId,
 			'module' => 'Contacts',
 			'name_value_list' => array (
@@ -161,7 +306,8 @@ function addStudent($upload) {
 							'value' => $settings->{'classlocation'} 
 					) 
 			) 
-	);
+		);
+	}
 	$json = json_encode ( $parameters );
 	$postArgs = 'method=set_entry&input_type=json&response_type=json&rest_data=' . $json;
 	echo "postArgs " . $url . "?" . $postArgs . "\n";
